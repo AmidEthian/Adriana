@@ -1,0 +1,86 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.tarjeta {
+    width: 80%;
+    max-width: 800px;
+    background-image: url('/mnt/data/rosas ngra.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: relative;
+}
+
+.contenido h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Estilo para cada línea */
+#linea1, #linea3, #linea5, #linea7, #linea9, #linea11, #linea13, #linea15, #linea17, #linea19, #linea21 { 
+    color: #ff6666; 
+}
+#linea2, #linea4, #linea6, #linea8, #linea10, #linea12, #linea14, #linea16, #linea18, #linea20 { 
+    color: #ffffff; 
+}
+
+/* Keyframes para la animación de aparición */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Asignar tiempo de aparición a cada línea */
+.linea {
+    animation: aparecer 1s ease forwards;
+}
+
+#linea1 { animation-delay: 0.5s; }
+#linea2 { animation-delay: 1.5s; }
+#linea3 { animation-delay: 2.5s; }
+#linea4 { animation-delay: 3.5s; }
+#linea5 { animation-delay: 4.5s; }
+#linea6 { animation-delay: 5.5s; }
+#linea7 { animation-delay: 6.5s; }
+#linea8 { animation-delay: 7.5s; }
+#linea9 { animation-delay: 8.5s; }
+#linea10 { animation-delay: 9.5s; }
+#linea11 { animation-delay: 10.5s; }
+#linea12 { animation-delay: 11.5s; }
+#linea13 { animation-delay: 12.5s; }
+#linea14 { animation-delay: 13.5s; }
+#linea15 { animation-delay: 14.5s; }
+#linea16 { animation-delay: 15.5s; }
+#linea17 { animation-delay: 16.5s; }
+#linea18 { animation-delay: 17.5s; }
+#linea19 { animation-delay: 18.5s; }
+#linea20 { animation-delay: 19.5s; }
+#linea21 { animation-delay: 20.5s; }
